@@ -281,19 +281,19 @@
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-success">Купить</button>
+                            <button type="button" class="btn btn-success btn-sm">Купить</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
                     <form>
-                        <div class="mb-3">
+                        <div class="mb-4">
                             <label for="userName" class="form-label">Имя</label>
-                            <input type="text" class="form-control" id="userName" placeholder="Ваше имя">
+                            <input type="text" class="form-control form-control-sm" placeholder="Ваше имя">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-4">
                             <label for="userEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="userEmail" placeholder="Ваш email">
+                            <input type="email" class="form-control form-control-sm" id="userEmail" placeholder="Ваш email">
                         </div>
                         <button type="submit" class="btn btn-primary">Отправить</button>
                     </form>
@@ -301,7 +301,7 @@
             </div>
             <!-- Раздел FAQ -->
             <div class="container-fluid mt-4">
-                <h2 class="mb-3">FAQ</h2>
+                <h4 class="mb-3">FAQ</h4>
                 <div class="row">
                     <!-- Как купить? -->
                     <div class="col">
@@ -343,6 +343,56 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- Таблица заказов -->
+            <div class="container mt-4">
+                <h4>Заказы</h4>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Название товара</th>
+                            <th scope="col">Цена за штуку</th>
+                            <th scope="col">Количество</th>
+                            <th scope="col">Итоговая сумма</th>
+                            <th scope="col">Статус заказа</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Товар 1</td>
+                            <td>$100</td>
+                            <td>2</td>
+                            <td>$200</td>
+                            <td><span class="badge bg-primary">Новый</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Товар 2</td>
+                            <td>$150</td>
+                            <td>1</td>
+                            <td>$150</td>
+                            <td><span class="badge bg-warning text-dark">Обработка</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Товар 3</td>
+                            <td>$200</td>
+                            <td>3</td>
+                            <td>$600</td>
+                            <td><span class="badge bg-success">Обработан</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Товар 4</td>
+                            <td>$50</td>
+                            <td>2</td>
+                            <td>$100</td>
+                            <td><span class="badge bg-danger">Отмена</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </main>
     </div>
